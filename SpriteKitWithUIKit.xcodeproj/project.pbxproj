@@ -12,6 +12,9 @@
 		42051CD81D1FDA2A0005D18E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42051CD61D1FDA2A0005D18E /* Main.storyboard */; };
 		42051CDA1D1FDA2A0005D18E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42051CD91D1FDA2A0005D18E /* Assets.xcassets */; };
 		42051CDD1D1FDA2A0005D18E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42051CDB1D1FDA2A0005D18E /* LaunchScreen.storyboard */; };
+		42051CE61D1FDB4E0005D18E /* LightScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42051CE51D1FDB4E0005D18E /* LightScene.swift */; };
+		42051CEA1D1FDB820005D18E /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 42051CE81D1FDB820005D18E /* bokeh.png */; };
+		42051CF01D1FE1490005D18E /* Bokeh.sks in Resources */ = {isa = PBXBuildFile; fileRef = 42051CEF1D1FE1490005D18E /* Bokeh.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		42051CD91D1FDA2A0005D18E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42051CDC1D1FDA2A0005D18E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42051CDE1D1FDA2A0005D18E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42051CE51D1FDB4E0005D18E /* LightScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightScene.swift; sourceTree = "<group>"; };
+		42051CE81D1FDB820005D18E /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
+		42051CEF1D1FE1490005D18E /* Bokeh.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Bokeh.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +63,22 @@
 				42051CD21D1FDA2A0005D18E /* AppDelegate.swift */,
 				42051CD41D1FDA2A0005D18E /* ViewController.swift */,
 				42051CD61D1FDA2A0005D18E /* Main.storyboard */,
+				42051CE41D1FDADC0005D18E /* SpriteKit */,
 				42051CD91D1FDA2A0005D18E /* Assets.xcassets */,
 				42051CDB1D1FDA2A0005D18E /* LaunchScreen.storyboard */,
 				42051CDE1D1FDA2A0005D18E /* Info.plist */,
 			);
 			path = SpriteKitWithUIKit;
+			sourceTree = "<group>";
+		};
+		42051CE41D1FDADC0005D18E /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				42051CE51D1FDB4E0005D18E /* LightScene.swift */,
+				42051CEF1D1FE1490005D18E /* Bokeh.sks */,
+				42051CE81D1FDB820005D18E /* bokeh.png */,
+			);
+			name = SpriteKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +139,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42051CEA1D1FDB820005D18E /* bokeh.png in Resources */,
+				42051CF01D1FE1490005D18E /* Bokeh.sks in Resources */,
 				42051CDD1D1FDA2A0005D18E /* LaunchScreen.storyboard in Resources */,
 				42051CDA1D1FDA2A0005D18E /* Assets.xcassets in Resources */,
 				42051CD81D1FDA2A0005D18E /* Main.storyboard in Resources */,
@@ -137,6 +156,7 @@
 			files = (
 				42051CD51D1FDA2A0005D18E /* ViewController.swift in Sources */,
 				42051CD31D1FDA2A0005D18E /* AppDelegate.swift in Sources */,
+				42051CE61D1FDB4E0005D18E /* LightScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

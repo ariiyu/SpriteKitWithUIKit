@@ -7,19 +7,33 @@
 //
 
 import UIKit
+import SpriteKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    @IBOutlet weak var skView: SKView!
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        showParticle()
     }
 
-
+    // MARK: Sprite Kit.
+    
+    func showParticle() {
+        print(skView.frame.size)
+        let scene = LightScene(size: skView.frame.size)
+        skView.ignoresSiblingOrder = true
+        scene.scaleMode = .AspectFill
+        skView.presentScene(scene)
+    }
 }
 
