@@ -253,7 +253,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpriteKitWithUIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ariiyu.SpriteKitWithUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ariiyu.SpriteKitWithUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -264,7 +264,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpriteKitWithUIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ariiyu.SpriteKitWithUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ariiyu.SpriteKitWithUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
