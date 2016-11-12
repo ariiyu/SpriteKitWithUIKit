@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         print(skView.frame.size)
         let scene = LightScene(size: skView.frame.size)
         skView.ignoresSiblingOrder = true
-        scene.scaleMode = .AspectFill
+        scene.scaleMode = .aspectFill
         skView.presentScene(scene)
     }
 }

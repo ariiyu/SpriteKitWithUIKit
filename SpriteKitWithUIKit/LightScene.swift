@@ -11,7 +11,7 @@ import SpriteKit
 
 class LightScene: SKScene {
     
-    let kFadeDuration = NSTimeInterval(1.3)
+    let kFadeDuration = TimeInterval(1.3)
     
     var lightNode: SKEmitterNode!
     
@@ -23,26 +23,26 @@ class LightScene: SKScene {
         super.init(size: size)
     }
     
-    override func didMoveToView(view: SKView) {
+    override func didMove(to view: SKView) {
         addPaper()
         showPaper()
     }
     
-    override func willMoveFromView(view: SKView) {
+    override func willMove(from view: SKView) {
         lightNode.removeFromParent()
     }
     
     func addPaper(){
         let fileName = "Bokeh"
-        let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "sks")!
-        lightNode = NSKeyedUnarchiver.unarchiveObjectWithFile(path) as! SKEmitterNode
-        lightNode.position = CGPointMake(self.size.width / 2, self.size.height / 2)
+        let path = Bundle.main.path(forResource: fileName, ofType: "sks")!
+        lightNode = NSKeyedUnarchiver.unarchiveObject(withFile: path) as! SKEmitterNode
+        lightNode.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
         lightNode.alpha = 0
         addChild(lightNode)
     }
     
     func showPaper(){
-        let show = SKAction.fadeInWithDuration(kFadeDuration)
-        lightNode.runAction(show)
+        let show = SKAction.fadeIn(withDuration: kFadeDuration)
+        lightNode.run(show)
     }
 }
